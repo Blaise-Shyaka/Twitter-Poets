@@ -140,5 +140,41 @@ header .top-nav ul li i {
   left: 20vw;
   background-color: #F5F6F8;
   bottom: 0;
-  border: 1px solid red;
+}
+
+.form-div {
+  width: 95%;
+  margin: 1rem auto;
+  padding: 0.1rem;
+  background-color: white;
+  border-radius: 5px;
+}
+
+form {
+  margin: 1rem;
+}
+
+form h5 {
+  margin: 0.5rem 0;
+  color: #C3C3C3
+}
+
+form input[type=text] {
+  width: 85%;
+  height: 2rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  border: 2px solid #EDEEF0;
+  border-radius: 3px;
+}
+
+form input[type=submit] {
+  padding: 0.4rem 0.9rem;
+  font-family: 'Roboto';
+  background-color:  #53A7E7;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 0.9rem;
 }
