@@ -2,18 +2,16 @@
   <div class="side-nav">
     <div class="user-details">
       <div class="photo"> <%= current_user.photo %> </div>
-      <div class="full name"><%= current_user.fullname %></div>
+      <div class="full name"><%= current_user.fullname.upcase %></div>
     </div>
     <div class="user-stats">
-      <div class="followers">
+      <div class="followers-numbers display-flex">
         <div>
-          <p><%= current_user.followers.length %></p>
+          <p class="bold-mid-size"><%= current_user.followers.length %></p>
           <p>Followers</p>
         </div>
-      </div>
-      </div class="followings">
         <div>
-          <p><%= current_user.followeds.length %></p>
+          <p class="bold-mid-size"><%= current_user.followeds.length %></p>
           <p>Followings</p>
         </div>
       </div>
