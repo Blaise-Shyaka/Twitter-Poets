@@ -117,7 +117,6 @@ header .top-nav ul li i {
 
 .header-nav {
   border-bottom: 3px solid #EDEEF0;
-  border-right: 3px solid #EDEEF0;
  }
  
 .nav-item {
@@ -217,4 +216,66 @@ form input[type=submit] {
   color: #333;
   font-weight: 400;
   font-size: 1.2rem;
+}
+
+.who-to-follow {
+  position: fixed;
+  right: 0;
+  top: 6vh;
+  width: 20vw;
+  bottom: 0;
+  background-color: #F5F6F8;
+  border-left: 3px solid #EDEEF0;
+}
+
+.wtf-header {
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 0.5rem;
+  border-bottom: 3px solid #EDEEF0;
+  color: #a3a3a3;
+}
+
+.a-follow {
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  margin: 1rem auto;
+}
+
+.avi {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.avi img {
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+}
+
+.fld-by {
+  color: #a3a3a3;
+  font-size: 0.9rem;
+}
+
+.mutual-follower {
+  color: #53A7E7;
+}
+
+.extra-links {
+  position: absolute;
+  margin-top: 1rem;
+  justify-content: space-evenly;
+  font-size: 0.8rem;
+  width: 100%;
+  left: 0;
+  color: #53A7E7;
+}
+
+.extra-links a {
+  text-decoration: none;
 }
