@@ -1,5 +1,17 @@
 require 'rails_helper'
 
 RSpec.describe Tweet, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  before(:each) do
+    @tweet = Tweet.new(author_id: 1, text: 'my first poem')
+  end
+
+  it 'Should be invalid if the author_id is not provided' do
+    @tweet.author_id = nil
+    expect(@tweet).to_not be_valid
+  end
+
+  it 'Should be invalid if the text is not provided' do
+    @tweet.text = nil
+    expect(@tweet).to_not be_valid
+  end
 end
