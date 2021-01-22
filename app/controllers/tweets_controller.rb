@@ -1,10 +1,10 @@
+# rubocop:disable Layout/LineLength
 class TweetsController < ApplicationController
-
   def create
     @tweet = current_user.tweets.new(tweet_params)
-    if @tweet.save
-      redirect_to tweets_path, notice: 'Tweet created successfully'
-    end
+    return unless @tweet.save
+
+    redirect_to tweets_path, notice: 'Tweet created successfully'
   end
 
   def new
@@ -13,10 +13,11 @@ class TweetsController < ApplicationController
 
   def index
     @tweets = current_user.tweets
-    @to_follow = User.order(created_at: :desc).first(5).filter{ |user| !current_user.followeds.include?(user) && user != current_user }
+    @to_follow = User.order(created_at: :desc).first(5).filter { |user| !current_user.followeds.include?(user) && user != current_user }
   end
 
   def tweet_params
     params.require(:tweet).permit(:text)
   end
 end
+# rubocop:enable Layout/LineLength

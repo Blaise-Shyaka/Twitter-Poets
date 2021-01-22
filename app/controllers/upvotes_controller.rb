@@ -1,11 +1,10 @@
 class UpvotesController < ApplicationController
   def create
     @page = upvotes_params[:page]
-    p @page
     @upvote = Upvote.new(user_id: upvotes_params[:user_id], tweet_id: upvotes_params[:tweet_id])
-    if @upvote.save
-      redirect_to @page
-    end
+    return unless @upvote.save
+
+    redirect_to @page
   end
 
   private

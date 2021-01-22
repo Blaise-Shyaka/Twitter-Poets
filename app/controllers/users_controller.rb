@@ -1,13 +1,13 @@
 class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
-    puts '===== Top ====='
+
     if user_exists
       flash.now[:notice] = 'Account already exists'
-      render "./users/new"
+      render './users/new'
       return
     end
-    puts '===== Bottom ====='
+
     if @user.save
       redirect_to new_session_path, notice: 'Account created successfully'
     else
@@ -16,8 +16,7 @@ class UsersController < ApplicationController
     end
   end
 
-  def new
-  end
+  def new; end
 
   def show
     @user = User.includes(:tweets).find(params[:id])

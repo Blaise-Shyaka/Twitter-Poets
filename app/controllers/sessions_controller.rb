@@ -1,5 +1,4 @@
 class SessionsController < ApplicationController
-
   def create
     @user = User.find_by(username: session_params[:username])
     if @user
@@ -11,9 +10,7 @@ class SessionsController < ApplicationController
     end
   end
 
-  def new
-
-  end
+  def new; end
 
   def destroy
     reset_session

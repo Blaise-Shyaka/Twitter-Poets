@@ -12,7 +12,7 @@ RSpec.describe User, type: :model do
 
   it 'Should be invalid if no fullname is provided' do
     @new_user.fullname = nil
-    expect(@new_user).to_not  be_valid
+    expect(@new_user).to_not be_valid
   end
 
   it 'Username length should not be less than 3 characters' do

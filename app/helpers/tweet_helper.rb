@@ -1,3 +1,4 @@
+# rubocop:disable Style/RedundantInterpolation
 module TweetHelper
   def display_who_to_follow(list)
     markup = ''
@@ -8,3 +9,4 @@ module TweetHelper
     markup.html_safe
   end
 end
+# rubocop:enable Style/RedundantInterpolation
