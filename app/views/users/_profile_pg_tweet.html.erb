@@ -6,5 +6,6 @@
       <p><%= distance_of_time_in_words(Time.current, tweet.created_at) %></p>
     </div>
     <p class="tweet-text"><%= tweet.text %></p>
+    <p class="upvotes"> <%= display_upvote(tweet) %> <span>(<%= tweet.upvotes.count %>)</span> </p>
   </div>
 </div>

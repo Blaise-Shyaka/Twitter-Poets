@@ -12,4 +12,12 @@ module ApplicationHelper
     return image_tag '/assets/cover-img' if image_source.nil?
     image_tag "#{current_user.cover_image}"
   end
+
+  def display_upvote(tweet)
+    upvote = Upvote.where(user_id: current_user.id, tweet_id: tweet.id)
+    if upvote.any?
+      return 'You upvoted!'
+    end
+    link_to 'Upvote', upvotes_path(upvotes: {user_id: current_user.id, tweet_id: tweet.id, page: request.path}), method: :post
+  end
 end
