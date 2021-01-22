@@ -25,13 +25,19 @@ RSpec.describe User, type: :model do
     expect(@new_user).to_not be_valid
   end
 
-  it 'FUllname length should not be less than 3 characters' do
+  it 'Fullname length should not be less than 3 characters' do
     @new_user.fullname = 'hi'
     expect(@new_user).to_not be_valid
   end
 
-  it 'FUllname length should not exceed 50 characters' do
+  it 'Fullname length should not exceed 50 characters' do
     @new_user.fullname = 'jkahdf hajkhdlak jdhfajklh hakjhfsdk adfjdlajdh ajdhkjhdfklah'
     expect(@new_user).to_not be_valid
   end
+
+  #it { should have_many(:followers) }
+
+  #it { should have_many(:followings) }
+
+  it { should have_many(:tweets).with_foreign_key('author_id') }
 end

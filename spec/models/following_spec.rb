@@ -9,8 +9,13 @@ RSpec.describe Following, type: :model do
     @following.follower_id = nil
     expect(@following).to_not be_valid
   end
+
   it 'Should be invalid without the followed_id' do
     @following.followed_id = nil
     expect(@following).to_not be_valid
   end
+
+  it { should belong_to(:follower).class_name('User') }
+
+  it { should belong_to(:following).class_name('User').with_foreign_key('followed_id') }
 end

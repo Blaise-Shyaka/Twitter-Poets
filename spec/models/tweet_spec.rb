@@ -14,4 +14,6 @@ RSpec.describe Tweet, type: :model do
     @tweet.text = nil
     expect(@tweet).to_not be_valid
   end
+
+  it { should belong_to(:user).with_foreign_key('author_id') }
 end

@@ -33,6 +33,7 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rubocop', '~>0.81.0'
   gem 'rspec-rails', ">= 3.9.0"
+  gem 'shoulda-matchers'
 end
 
 group :development do
