@@ -1,0 +1,10 @@
+<div>
+  <div>
+    <%= render 'tweet_form' %>
+  </div>
+  <div>
+    <% @tweets.each do |tweet| %>
+      <li><%= tweet.text %></li>
+    <% end %>
+  </div>
+</div>

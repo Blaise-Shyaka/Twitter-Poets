@@ -24,4 +24,4 @@ class SessionsController < ApplicationController
   def session_params
     params.permit(:authenticity_token, :name, :commit)
   end
-end 
+end
