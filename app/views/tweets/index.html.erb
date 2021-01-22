@@ -3,9 +3,17 @@
   <div class="form-div">
     <%= render 'tweet_form' %>
   </div>
-  <div>
-    <% @tweets.each do |tweet| %>
-      <li><%= tweet.text %></li>
-    <% end %>
+  <div class="timeline">
+    <div class="new-tweets">
+      <h6>4 NEW TWEETS</h6>
+    </div>
+    <div class="feed">
+      <% @tweets.each do |tweet| %>
+        <%= render 'tweet', tweet: tweet %>
+      <% end %>
+    </div>
+    <div class="view-more">
+      <h6><%= link_to 'VIEW MORE' %></h6>
+    </div>
   </div>
 </div>

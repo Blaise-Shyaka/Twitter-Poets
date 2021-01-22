@@ -142,7 +142,7 @@ header .top-nav ul li i {
   bottom: 0;
 }
 
-.form-div {
+.form-div, .timeline {
   width: 95%;
   margin: 1rem auto;
   padding: 0.1rem;
@@ -177,4 +177,44 @@ form input[type=submit] {
   border-radius: 4px;
   color: white;
   font-size: 0.9rem;
+}
+
+.new-tweets, .view-more {
+  color: #53A7E7;
+  text-align: left;
+  border-bottom: 2px solid #EDEEF0;
+  padding: 0.8rem;
+}
+
+.view-more {
+  border: none;
+  text-align: center;
+}
+
+.view-more a {
+  text-decoration: none;
+}
+
+.tweet {
+  padding: 0.8rem;
+}
+
+.content {
+  width: 100%;
+}
+
+.content .tweet-detail {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.tweet-text, .tweet-detail p {
+  color: #a3a3a3;
+  font-size: 0.9rem;
+}
+
+.content .tweet-sender {
+  color: #333;
+  font-weight: 400;
+  font-size: 1.2rem;
 }
