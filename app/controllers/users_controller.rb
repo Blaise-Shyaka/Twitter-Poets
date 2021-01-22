@@ -20,7 +20,7 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user = User.find_by(id: params[:id])
+    @user = User.includes(:tweets).find(params[:id])
     @followed_by = @user.followers.last(5)
   end
 
