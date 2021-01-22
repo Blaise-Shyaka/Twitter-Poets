@@ -8,15 +8,15 @@
       </div>
       <div class="stats-user display-flex">
         <div class="tweets-nber nber nber1">
-          <p class="numbers">500</p>
+          <p class="numbers"><%= current_user.tweets.count %></p>
           <p class="subtitle">Tweets</p>
         </div>
         <div class="following-nber nber nber2">
-          <p class="numbers">500</p>
+          <p class="numbers"><%= current_user.followeds.count %></p>
           <p class="subtitle">Following</p>
         </div>
         <div class="followers-nber nber nber3">
-          <p class="numbers">500</p>
+          <p class="numbers"><%= current_user.followers.count %></p>
           <p class="subtitle">Followers</p>
         </div>
       </div>
