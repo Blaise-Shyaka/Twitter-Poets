@@ -3,5 +3,6 @@ Rails.application.routes.draw do
   resources :users, only: %i[new create show]
   resources :sessions, only: %i[create destroy new]
   resources :tweets, only: %i[create index new]
+  resources :followings, only: %i[create]
   root to: 'sessions#new'
 end

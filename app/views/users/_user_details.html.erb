@@ -4,7 +4,7 @@
       <div class="user-name">
         <p class="user-fullname"><%= @user.fullname.upcase %></p>
         <p>@<%= @user.username %></p>
-        <p> <%= link_to 'Follow' %> </p>
+        <p> <%= display_follow_link %> </p>
       </div>
       <div class="stats-user display-flex">
         <div class="tweets-nber nber nber1">
