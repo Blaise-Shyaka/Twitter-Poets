@@ -1,0 +1,30 @@
+<div class="who-to-follow">
+  <div class="user-profile-stats display-flex">
+      <div class="avi"><%= image_tag '/assets/person' %></div>
+      <div class="user-name">
+        <p class="user-fullname"><%= current_user.fullname.upcase %></p>
+        <p>@<%= current_user.username %></p>
+        <p> <%= link_to 'Follow' %> </p>
+      </div>
+      <div class="stats-user display-flex">
+        <div class="tweets-nber nber nber1">
+          <p class="numbers">500</p>
+          <p class="subtitle">Tweets</p>
+        </div>
+        <div class="following-nber nber nber2">
+          <p class="numbers">500</p>
+          <p class="subtitle">Following</p>
+        </div>
+        <div class="followers-nber nber nber3">
+          <p class="numbers">500</p>
+          <p class="subtitle">Followers</p>
+        </div>
+      </div>
+  </div>
+  <div class="display-flex wtf-header">
+    <h5>FOLLOWED BY</h5>
+  </div>
+  <div>
+    <%= render 'follow' %>
+  </div>
+</div>

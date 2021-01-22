@@ -7,9 +7,6 @@
       <%= link_to 'Tweets', user_path %>
     </div>
   </div>
-  <div class="form-div">
-    <%= render 'profile_tweet_form' %>
-  </div>
   <div class="timeline">
     <div class="new-tweets">
       <h6>ALL TWEETS/ <span class="grey">NO REPLIES</span></h6>
@@ -18,6 +15,9 @@
       <% current_user.tweets.each do |tweet| %>
         <%= render 'profile_pg_tweet', tweet: tweet %>
       <% end %>
+    </div>
+    <div>
+      <%= render 'user_details' %>
     </div>
   </div>
 </div>
