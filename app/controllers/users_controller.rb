@@ -21,6 +21,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find_by(id: params[:id])
+    @followed_by = @user.followers.last(5)
   end
 
   private
