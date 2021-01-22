@@ -1,2 +1,6 @@
 class User < ApplicationRecord
+  validates_presence_of :username
+  validates_presence_of :fullname
+  validates_length_of :username, minimum: 3, maximum: 20
+  validates_length_of :fullname, minimum: 3, maximum: 45
 end
