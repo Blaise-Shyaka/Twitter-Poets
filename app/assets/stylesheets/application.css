@@ -344,3 +344,9 @@ form input[type=submit] {
 .subtitle {
   color: #a3a3a3;
 }
+
+.signup-form-container, .signin-form-container {
+  width: 40%;
+  margin: 1rem auto;
+  text-align: center;
+}
