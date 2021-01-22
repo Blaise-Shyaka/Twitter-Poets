@@ -83,6 +83,7 @@ header {
   top: 0;
   right: 0;
   width: 80vw;
+  height: 6vh;
   background-color: #53A7E7;
   display: flex;
   justify-content: space-between;
@@ -114,9 +115,30 @@ header .top-nav ul li i {
   font-size: 1.3rem;
 }
 
-.timeline {
-  width: 55vw;
+.header-nav {
+  border-bottom: 3px solid #EDEEF0;
+  border-right: 3px solid #EDEEF0;
+ }
+ 
+.nav-item {
+   padding-top: 1rem;
+   padding-bottom: 1rem;
+   border-bottom: 2px solid #53A7E7;
+   width: 10%;
+   text-align: center;
+ }
+ 
+.nav-item a {
+   text-decoration: none;
+   color: #717785;
+ }
+ 
+.homepage {
+  width: 60vw;
   position: absolute;
-  top: 5%;
-  right: 20vw;
+  top: 6vh;
+  left: 20vw;
+  background-color: #F5F6F8;
+  bottom: 0;
+  border: 1px solid red;
 }
