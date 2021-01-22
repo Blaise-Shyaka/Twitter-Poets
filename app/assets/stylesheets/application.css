@@ -350,3 +350,12 @@ form input[type=submit] {
   margin: 1rem auto;
   text-align: center;
 }
+
+.side-nav .user-details .profile {
+  width: 20%;
+}
+
+.to-follow a {
+  text-decoration: none;
+  color: #333;
+}

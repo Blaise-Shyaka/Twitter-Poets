@@ -12,7 +12,7 @@
       <h6>ALL TWEETS/ <span class="grey">NO REPLIES</span></h6>
     </div>
     <div class="feed">
-      <% current_user.tweets.each do |tweet| %>
+      <% @user.tweets.each do |tweet| %>
         <%= render 'profile_pg_tweet', tweet: tweet %>
       <% end %>
     </div>

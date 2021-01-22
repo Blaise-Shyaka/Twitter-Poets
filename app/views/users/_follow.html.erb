@@ -3,6 +3,6 @@
     <%= display_avi(flw.photo) %>
   </div>
   <div class="name-followed-by">
-    <p class="to-follow">Jonathan Moreira</p>
+    <p class="to-follow"> <%= link_to "#{flw.fullname}", user_path(flw) %></p>
   </div>
 </div>

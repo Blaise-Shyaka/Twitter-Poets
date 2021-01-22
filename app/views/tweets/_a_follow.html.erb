@@ -3,6 +3,6 @@
     <%= image_tag '/assets/person'%>
   </div>
   <div class="name-followed-by">
-    <p class="to-follow"><%= flw.fullname %></p>
+    <p class="to-follow"><%= link_to "#{flw.fullname}", user_path(flw) %></p>
   <div>
 <div>
