@@ -239,7 +239,7 @@ form input[type=submit] {
 .a-follow {
   justify-content: space-around;
   align-items: center;
-  width: 90%;
+  width: 50%;
   margin: 1rem auto;
 }
 
