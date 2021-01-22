@@ -1,0 +1,10 @@
+<div class="tweet display-flex">
+  <div class="profile"><%= image_tag '/assets/person' %></div>
+  <div class="content">
+    <div class="tweet-detail display-flex">
+      <p class="tweet-sender"><%= tweet.user.fullname %></p>
+      <p><%= distance_of_time_in_words(Time.current, tweet.created_at) %></p>
+    </div>
+    <p class="tweet-text"><%= tweet.text %></p>
+  </div>
+</div>
