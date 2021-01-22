@@ -35,9 +35,9 @@ RSpec.describe User, type: :model do
     expect(@new_user).to_not be_valid
   end
 
-  #it { should have_many(:followers) }
+  it { should have_many(:followers) }
 
-  #it { should have_many(:followings) }
+  it { should have_many(:followeds) }
 
   it { should have_many(:tweets).with_foreign_key('author_id') }
 end

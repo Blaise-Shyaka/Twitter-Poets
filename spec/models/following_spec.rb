@@ -17,5 +17,5 @@ RSpec.describe Following, type: :model do
 
   it { should belong_to(:follower).class_name('User') }
 
-  it { should belong_to(:following).class_name('User').with_foreign_key('followed_id') }
+  it { should belong_to(:followed).class_name('User').with_foreign_key('followed_id') }
 end
