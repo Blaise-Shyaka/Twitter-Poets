@@ -1,4 +1,7 @@
 /*
+*= require material_icons
+*/
+/*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
  *
@@ -13,3 +16,38 @@
  *= require_tree .
  *= require_self
  */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.top-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 80vw;
+  background-color: #53A7E7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-nav ul {
+  display: flex;
+  width: 20%;
+  justify-content: space-between;
+}
+
+.top-nav ul li {
+  list-style: none;
+}
+
+.timeline {
+  width: 55vw;
+  position: absolute;
+  top: 5%;
+  right: 20vw;
+}

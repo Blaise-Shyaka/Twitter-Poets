@@ -1,0 +1,50 @@
+<nav>
+  <div class="top-nav">
+    <div><%= image_tag '/assets/twitter-nav-icon' %></div>
+    <ul>
+      <li><i class="material-icons">edit</i></li>
+      <li><i class="material-icons">mail_outline</i></li>
+      <li><i class="material-icons">search</i></li>
+      <li><i class="material-icons">settings</i></li>
+    </ul>
+  </div>
+  <div class="side-nav">
+    <div class="user-details">
+      <div class="photo"> <%= current_user.photo %> </div>
+      <div class="full name"><%= current_user.fullname %></div>
+    </div>
+    <div class="user-stats">
+      <div class="followers">
+        <div>
+          <p><%= current_user.followers.length %></p>
+          <p>Followers</p>
+        </div>
+      </div>
+      </div class="followings">
+        <div>
+          <p><%= current_user.followeds.length %></p>
+          <p>Followings</p>
+        </div>
+      </div>
+    </div>
+    <div class="links">
+      <ul>
+      <%= link_to 'Home' do %>
+        <li><i class="material-icons">home</i> Home </li>
+      <% end %>
+      <%= link_to 'Connect' do %>
+        <li><i class="material-icons">@</i> Connect </li>
+      <% end %>
+      <%= link_to 'Discover' do %>
+        <li><i class="material-icons">#</i> Discover </li>
+      <% end %>
+      <%= link_to 'Home' do %>
+        <li><i class="material-icons">person</i> Profile </li>
+      <% end %>
+      <%= link_to 'Home' do %>
+        <li><i class="material-icons">pie_chart</i> Statistics </li>
+      <% end %>
+      </ul>
+    </div>
+  </div>
+</nav>
