@@ -12,7 +12,7 @@ This project is a Twitter-like social media app where users share mostly poetic 
 
 ## Live Demo
 
-[Live demo link]()
+[Live demo link](https://protected-fjord-05413.herokuapp.com/)
 
 ## Getting Started
 
