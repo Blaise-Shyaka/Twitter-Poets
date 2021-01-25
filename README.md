@@ -14,6 +14,10 @@ This project is a Twitter-like social media app where users share mostly poetic 
 
 [Live demo link](https://protected-fjord-05413.herokuapp.com/)
 
+## Project walkthrough video
+
+[Walkthrough video](https://www.loom.com/share/b70accda31494b85b3609b2a2174db01)
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
@@ -73,8 +77,13 @@ Open `http://localhost:3000/` in your browser.
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](issues/).
+Feel free to check the [issues page](https://github.com/Blaise-Shyaka/Twitter-Poets/issues).
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- [@Microverse](https://www.microverse.org/) for the project idea and code review
+- [@Gregoire Vella](https://www.behance.net/gregoirevella) for the design inspiration
