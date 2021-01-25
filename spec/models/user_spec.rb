@@ -40,4 +40,6 @@ RSpec.describe User, type: :model do
   it { should have_many(:followeds) }
 
   it { should have_many(:tweets).with_foreign_key('author_id') }
+
+  it { should have_many(:upvotes) }
 end

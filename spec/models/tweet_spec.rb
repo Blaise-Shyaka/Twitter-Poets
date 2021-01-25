@@ -16,4 +16,6 @@ RSpec.describe Tweet, type: :model do
   end
 
   it { should belong_to(:user).with_foreign_key('author_id') }
+
+  it { should have_many(:upvotes) }
 end
