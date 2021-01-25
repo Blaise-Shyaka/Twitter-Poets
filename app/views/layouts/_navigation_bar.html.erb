@@ -24,23 +24,8 @@
           <% end %>
         </li>
         <li>
-          <%= link_to do %>
-            <i class="material-icons">@</i> CONNECT
-          <% end %>
-        </li>
-        <li>
-          <%= link_to do %>
-            <i class="material-icons">#</i> DISCOVER
-          <% end %>
-        </li>
-        <li>
           <%= link_to user_path(current_user.id) do %>
             <i class="material-icons">person</i> PROFILE
-          <% end %>
-        </li>
-        <li>
-          <%= link_to do %>
-            <i class="material-icons">pie_chart</i> STATISTICS
           <% end %>
         </li>
       </ul>
@@ -51,26 +36,6 @@
   <div class="top-nav display-flex">
     <div class="image-container"><%= image_tag 'twitter-nav-icon.png' %></div>
     <ul>
-      <li>
-        <%= link_to do %>
-          <i class="material-icons">edit</i>
-        <% end %>
-      </li>
-      <li>
-        <%= link_to do %>
-          <i class="material-icons">mail_outline</i>
-        <% end %>
-      </li>
-      <li>
-        <%= link_to do %>
-          <i class="material-icons">search</i>
-        <% end %>
-      </li>
-      <li>
-        <%= link_to do %>
-          <i class="material-icons">settings</i>
-        <% end %>
-      </li>
       <li>
         <%= link_to session_path(request.session_options[:id]), method: :delete do %>
           Log Out
