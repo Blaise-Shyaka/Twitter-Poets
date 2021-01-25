@@ -7,15 +7,15 @@ module ApplicationHelper
   end
 
   def display_avi(image_source)
-    return image_tag '/assets/person' if image_source.nil?
+    return image_tag 'person.png' if image_source.nil?
 
-    image_tag current_user.photo.to_s
+    image_tag image_source.to_s
   end
 
   def display_cover_photo(image_source)
-    return image_tag '/assets/cover-img' if image_source.nil?
+    return image_tag 'cover-img.jpg' if image_source.nil?
 
-    image_tag current_user.cover_image.to_s
+    image_tag image_source.to_s
   end
 
   def display_upvote(tweet)
