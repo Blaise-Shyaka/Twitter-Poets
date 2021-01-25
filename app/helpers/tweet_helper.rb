@@ -5,7 +5,7 @@ module TweetHelper
     list.each do |flw|
       markup << "#{render 'a_follow', flw: flw}"
     end
-    p markup
+
     markup.html_safe
   end
 end

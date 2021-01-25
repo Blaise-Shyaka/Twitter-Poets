@@ -96,3 +96,4 @@ RSpec.configure do |config|
 =end
 end
 # rubocop:enable Style/BlockComments
+require 'capybara/rspec'
