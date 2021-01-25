@@ -71,6 +71,11 @@
           <i class="material-icons">settings</i>
         <% end %>
       </li>
+      <li>
+        <%= link_to session_path(request.session_options[:id]), method: :delete do %>
+          Log Out
+        <% end %>
+      </li>
     </ul>
   </div>
 </header>
