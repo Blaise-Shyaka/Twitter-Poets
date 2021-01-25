@@ -12,9 +12,7 @@
       <h6>ALL TWEETS/ <span class="grey">NO REPLIES</span></h6>
     </div>
     <div class="feed">
-      <% @user.tweets.each do |tweet| %>
-        <%= render 'profile_pg_tweet', tweet: tweet %>
-      <% end %>
+      <%= render partial: 'profile_pg_tweet', collection: @user.tweets, as: :tweet %>
     </div>
     <div>
       <%= render 'user_details' %>
