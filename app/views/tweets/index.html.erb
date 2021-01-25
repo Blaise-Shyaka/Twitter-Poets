@@ -8,9 +8,7 @@
       <h6>0 NEW TWEETS</h6>
     </div>
     <div class="feed">
-      <% @tweets.each do |tweet| %>
-        <%= render 'tweet', tweet: tweet %>
-      <% end %>
+      <%= render partial: 'tweet', collection: @tweets %>
     </div>
     <div class="view-more">
       <h6><%= link_to 'VIEW MORE' %></h6>
