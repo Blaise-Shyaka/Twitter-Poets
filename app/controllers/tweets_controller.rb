@@ -12,7 +12,7 @@ class TweetsController < ApplicationController
   end
 
   def index
-    @tweets = Tweet.order(created_at: :desc).all
+    @tweets = Tweet.includes(:user).order(created_at: :desc).all
     @to_follow = User.order(created_at: :desc).first(5).filter { |user| !current_user.followeds.include?(user) && user != current_user }
   end
 
