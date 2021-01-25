@@ -35,9 +35,13 @@ RSpec.describe User, type: :model do
     expect(@new_user).to_not be_valid
   end
 
-  it { should have_many(:followers) }
+  it { should have_many(:follows_as_followed).with_foreign_key('followed_id').class_name('Following') }
 
-  it { should have_many(:followeds) }
+  it { should have_many(:follows_as_follower).with_foreign_key('follower_id').class_name('Following') }
+
+  it { should have_many(:followers).through(:follows_as_followed).source(:follower) }
+
+  it { should have_many(:followeds).through(:follows_as_follower).source(:followed) }
 
   it { should have_many(:tweets).with_foreign_key('author_id') }
 
