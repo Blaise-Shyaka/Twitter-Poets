@@ -36,10 +36,16 @@ Clone this repository by running:
 git clone https://github.com/Blaise-Shyaka/poets-twitter
 ```
 
-Instal gems with:
+Install gems with:
 
 ```
 bundle install
+```
+
+Install and check dependencies with:
+
+```
+yarn install --check-files
 ```
 
 Setup database with:
