@@ -2,8 +2,10 @@
 
 This project is a Twitter-like social media app where users share mostly poetic content. A user can create an account, Compose tweets, follow other users, and view their tweets. A user can also upvote the tweet they like.
 
-![Screenshot One](./app/assets/images/Screenshot1.png)
-![Screenshot Two](./app/assets/images/Screenshot2.png)
+![Screenshot One](./app/assets/images/Screenshot12.png)
+![Screenshot Two](./app/assets/images/Screenshot11.png)
+![Screenshot Three](./app/assets/images/Screenshot13.png)
+![Screenshot Four](./app/assets/images/Screenshot14.png)
 
 ## Built With
 
@@ -33,7 +35,7 @@ To get a local copy up and running follow these simple example steps.
 Clone this repository by running:
 
 ```
-git clone https://github.com/Blaise-Shyaka/poets-twitter
+git clone https://github.com/Blaise-Shyaka/Twitter-Poets
 ```
 
 Install gems with:
