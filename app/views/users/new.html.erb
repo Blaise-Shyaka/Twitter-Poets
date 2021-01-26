@@ -1,0 +1,11 @@
+<div class="signup-form-container">
+<h1>Sign Up</h1>
+<%= form_with model: User, method: :post do |f|%>
+    <%= f.text_field(:username, placeholder: 'Username')%>
+    <br><br>
+    <%= f.text_field(:fullname, placeholder: 'Full Names')%>
+    <br><br>
+    <%= f.submit('Create Account')%>
+  <% end %>
+  <%= link_to 'Have an account? Sign in instead', new_session_path %>
+</div>

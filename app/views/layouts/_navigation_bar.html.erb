@@ -1,0 +1,46 @@
+<nav class="position-fixed">
+  <div class="side-nav">
+    <div class="user-details">
+      <div class="profile"> <%= display_avi(current_user.photo) %> </div>
+      <div class="full name"><%= current_user.fullname.upcase %></div>
+    </div>
+    <div class="user-stats">
+      <div class="followers-numbers display-flex">
+        <div>
+          <p class="bold-mid-size"><%= current_user.followers.length %></p>
+          <p>Followers</p>
+        </div>
+        <div>
+          <p class="bold-mid-size"><%= current_user.followeds.length %></p>
+          <p>Followings</p>
+        </div>
+      </div>
+    </div>
+    <div class="links">
+      <ul>
+        <li>
+          <%= link_to tweets_path do %>
+            <i class="material-icons">home</i>HOME
+          <% end %>
+        </li>
+        <li>
+          <%= link_to user_path(current_user.id) do %>
+            <i class="material-icons">person</i> PROFILE
+          <% end %>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<header class="position-fixed">
+  <div class="top-nav display-flex">
+    <div class="image-container"><%= image_tag 'twitter-nav-icon.png' %></div>
+    <ul>
+      <li class="logout display-flex">
+        <%= link_to session_path(request.session_options[:id]), method: :delete do %>
+          Log Out
+        <% end %>
+      </li>
+    </ul>
+  </div>
+</header>

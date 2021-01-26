@@ -1,0 +1,18 @@
+<div class="homepage">
+  <%= render 'header_nav' %>
+  <div class="form-div">
+    <%= render 'tweet_form' %>
+  </div>
+  <div class="timeline">
+    <div class="new-tweets">
+      <h6>0 NEW TWEETS</h6>
+    </div>
+    <div class="feed">
+      <%= render @tweets || 'There are no tweets yet' %>
+    </div>
+    <div class="view-more">
+      <h6><%= link_to 'VIEW MORE' %></h6>
+    </div>
+  </div>
+  <%= render 'who_to_follow' %>
+</div>

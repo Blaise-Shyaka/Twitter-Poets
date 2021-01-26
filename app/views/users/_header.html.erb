@@ -1,0 +1,21 @@
+<div class="profile-header homepage">
+  <div class="cover-img display-flex">
+    <%= display_cover_photo(current_user.cover_image) %>
+  </div>
+  <div class="header-nav">
+    <div class="nav-item">
+      <%= link_to 'Tweets', user_path %>
+    </div>
+  </div>
+  <div class="timeline">
+    <div class="new-tweets">
+      <h6>ALL TWEETS/ <span class="grey">NO REPLIES</span></h6>
+    </div>
+    <div class="feed">
+      <%= render partial: 'profile_pg_tweet', collection: @user.tweets, as: :tweet %>
+    </div>
+    <div>
+      <%= render 'user_details' %>
+    </div>
+  </div>
+</div>

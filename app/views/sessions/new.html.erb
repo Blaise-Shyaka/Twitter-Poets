@@ -1,0 +1,8 @@
+<div class="signin-form-container">
+  <h1>Sign In</h1>
+  <%= form_with url: '/sessions', method: :post do |f| %>
+    <%= f.text_field(:username, placeholder: 'Username') %>
+    <%= f.submit('Sign in')%>
+  <% end %>
+  <%= link_to 'Create Account', new_user_path %>
+</div>

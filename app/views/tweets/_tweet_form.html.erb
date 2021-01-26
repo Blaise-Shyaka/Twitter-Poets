@@ -1,0 +1,5 @@
+<%= form_with model: Tweet, method: :post do |f| %>
+  <h5>TWEET SOMETHING</h5>
+  <%= f.text_field(:text, placeholder: 'Compose your tweet') %>
+  <%= f.submit('Tweet') %>
+<% end %>

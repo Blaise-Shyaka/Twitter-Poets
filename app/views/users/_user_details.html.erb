@@ -1,0 +1,30 @@
+<div class="who-to-follow">
+  <div class="user-profile-stats display-flex">
+      <div class="avi"><%= display_avi(@user.photo) %></div>
+      <div class="user-name">
+        <p class="user-fullname"><%= @user.fullname.upcase %></p>
+        <p>@<%= @user.username %></p>
+        <p> <%= display_follow_link %> </p>
+      </div>
+      <div class="stats-user display-flex">
+        <div class="tweets-nber nber nber1">
+          <p class="numbers"><%= @user.tweets.count %></p>
+          <p class="subtitle">Tweets</p>
+        </div>
+        <div class="following-nber nber nber2">
+          <p class="numbers"><%= @user.followeds.count %></p>
+          <p class="subtitle">Following</p>
+        </div>
+        <div class="followers-nber nber nber3">
+          <p class="numbers"><%= @user.followers.count %></p>
+          <p class="subtitle">Followers</p>
+        </div>
+      </div>
+  </div>
+  <div class="display-flex wtf-header">
+    <h5>FOLLOWED BY</h5>
+  </div>
+  <div>
+    <%= display_followed_by(@followed_by) %>
+  </div>
+</div>

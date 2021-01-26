@@ -1,0 +1,112 @@
+.user-stats {
+  margin: 1.5rem 0;
+}
+
+nav {
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 20vw;
+  height: 100vh;
+  background-color: #1b2a3d;
+  color: #87a1c0;
+}
+
+nav .user-details {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 1rem auto;
+  width: 70%;
+}
+
+.followers-numbers {
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+.links a {
+  text-decoration: none;
+  color: #87a1c0;
+  display: flex;
+  align-items: center;
+  margin: 1rem 0 1rem 1rem;
+}
+
+.links i {
+  margin-right: 0.5rem;
+}
+
+header {
+  top: 0;
+  right: 0;
+  width: 80vw;
+  height: 6vh;
+  background-color: #53a7e7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .top-nav {
+  width: 95%;
+  margin: 0.5rem auto;
+  justify-content: space-between;
+}
+
+header .image-container {
+  width: 30%;
+}
+
+header .top-nav ul {
+  display: flex;
+  width: 18%;
+  justify-content: space-between;
+}
+
+header .top-nav ul li {
+  list-style: none;
+}
+
+header .top-nav ul li i {
+  color: #346b94;
+  font-size: 1.3rem;
+}
+
+.header-nav {
+  border-bottom: 3px solid #edeef0;
+}
+
+.nav-item {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #53a7e7;
+  width: 10%;
+  text-align: center;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #717785;
+}
+
+.side-nav .user-details .profile {
+  width: 20%;
+}
+
+.logout {
+  background-color: whitesmoke;
+  border-radius: 4px;
+
+  a {
+    text-decoration: none;
+    color: #53a7e7;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2rem 0.5rem;
+    font-weight: 500;
+  }
+}
