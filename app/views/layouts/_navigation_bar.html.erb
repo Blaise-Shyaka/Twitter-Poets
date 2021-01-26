@@ -36,7 +36,7 @@
   <div class="top-nav display-flex">
     <div class="image-container"><%= image_tag 'twitter-nav-icon.png' %></div>
     <ul>
-      <li>
+      <li class="logout display-flex">
         <%= link_to session_path(request.session_options[:id]), method: :delete do %>
           Log Out
         <% end %>

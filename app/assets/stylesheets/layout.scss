@@ -94,3 +94,19 @@ header .top-nav ul li i {
 .side-nav .user-details .profile {
   width: 20%;
 }
+
+.logout {
+  background-color:whitesmoke;
+  border-radius: 4px;
+
+  a {
+    text-decoration: none;
+    color: #53a7e7;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2rem 0.5rem;
+    font-weight: 500;
+  }
+}
